@@ -6,7 +6,7 @@ package IVistaCuentas;
 
 import Controlador.ControladorCuentas;
 import ModeloCuentaBancaria.CuentaBancaria;
-import ModeloCuentaBancaria.CuentaColonea;
+import ModeloCuentaBancaria.CuentaColones;
 import ModeloCuentaBancaria.CuentaDolares;
 import ModeloCuentaBancaria.ServicioCuenta;
 
@@ -240,7 +240,7 @@ public void setControlador(ControladorCuentas controlador) {
         }
 
         CuentaBancaria cuenta = moneda.equals("Colones")
-            ? new CuentaColonea(numero, titular, saldo)
+            ? new CuentaColones(numero, titular, saldo)
             : new CuentaDolares(numero, titular, saldo);
 
         controlador.CrearCuenta(cuenta);

@@ -14,8 +14,9 @@ public class CuentaDolares extends CuentaBancaria {
         super(NumeroCuenta, Titular, saldo, activa, saldoInicial);
     }
 
-    public CuentaDolares(String numero, String titular, double saldo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public CuentaDolares(String numeroCuenta, String titular, double saldo) {
+        // Asume que la cuenta está activa y el saldo inicial es igual al saldo proporcionado
+        super(numeroCuenta, titular, saldo, true, saldo);
     }
 
     
